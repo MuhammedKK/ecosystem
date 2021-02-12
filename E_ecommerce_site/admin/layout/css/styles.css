@@ -1,0 +1,335 @@
+/* START MAIN RULES */
+:root {
+    --main-color:#c0392b;
+}
+
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-size:15px;
+}
+
+.form-group {
+    position:relative;
+}
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+a,a:hover, a:active {color:#fff;text-decoration: none;}
+
+.fa-plus {
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* End MAIN RULES */
+
+/* START LOGIN FORM */
+.login {
+    width:350px;
+    margin:200px auto;
+}
+.login h4 {
+    font-size:20px;
+    font-weight:bold;
+    color:#999
+}
+
+.login input {
+    margin-bottom:10px;
+}
+
+/* End LOGIN FORM */
+
+/* Start Navbar Section */
+.navbar {
+    border-radius:0;
+}
+.navbar-brand {
+    font-size:1em
+}
+
+.dropdown-menu {
+    min-width: 170px;
+    padding: 0px ;
+    border:none;
+    transition: all .5s ease-in-out;
+}
+.dropdown-menu>li>a {
+    padding: 10px;
+    transition: all .5s ease-in-out;
+
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover,
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color:var(--main-color);
+    color:#fff;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    padding-left:20px;
+}
+/* End Navbar Section */
+
+/* Start Dashboar Section */
+
+/* Start Members */
+
+.stats {
+    margin-top:50px;
+}
+
+.stats .stat {
+    border:1px solid #CCC;
+    padding:20px;
+    border-radius:7px;
+    color:#fff;
+    font-size:20px;
+    
+}
+.stats .stat.total-members {
+    background-color:#2980b9;
+}
+.stats .stat.pending-members {
+    background-color:#27ae60;
+}
+.stats .stat.total-items {
+    background-color:#e74c3c;
+}
+.stats .stat.total-cats {
+    background-color:#9b59b6;
+}
+
+.stats .stat i {
+    font-size: 46px;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    left: -5px;
+}
+
+.stats .stat span {
+    display: block;
+    font-size: 65px;
+    color: #fff;
+}
+
+.dash-panel {
+    margin-top:30px;    
+}
+.dash-panel ul li span {
+    margin-top: 9px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.dash-panel ul li a {
+    padding: 8px 12px;
+    font-size: 15px;
+    margin-left:5px
+}
+.dash-panel ul li a.btn-primary {margin-right:5px}
+/* End Members */
+
+/* Start Categories */
+
+.cats {
+    margin-top:40px;
+}
+
+.cats  .panel .panel-heading {
+    font-size: 25px;
+    padding:20px 12px;
+}
+
+.cats  .panel .panel-heading h3 {
+    margin:0;
+    display: inline-block;
+    color: var(--main-color);
+    
+}
+
+.cats  .panel .panel-heading .order a {
+    color:#999
+}
+.cats  .panel .panel-heading a.active {
+    color:var(--main-color);
+} 
+
+.cats  .panel .panel-body h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color:#34495e;
+}
+
+.cats .panel hr {
+    border-top:1px solid #999
+}
+
+.cats .categories {
+ position: relative;
+ overflow:hidden ;
+}
+
+.cats .categories .cats-btns {
+    position:absolute;
+
+    right:-17%;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out
+}
+
+.cats .categories .cats-btns a {
+    margin-right:5px;
+}
+
+.cats  .panel .categories:hover .cats-btns {
+    right:0%;
+}
+
+.cats .categories .cat-child {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.cats .categories .cat-child h4 {
+    font-size: 23px;
+}
+
+.cats .categories .cat-child p {
+    color: #999;
+}
+
+.cats .categories .cat-child .child-btns {
+    position:absolute;
+
+    right:-17%;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+    top: 35%;
+}
+
+.cats  .categories .cat-child:hover .child-btns {
+    right:0%;
+}
+
+/* End Categories */
+
+/* Start Comments */
+
+.comment-box {
+    margin:20px 10px;
+    overflow: hidden;
+}
+
+.comment-box .member-name,
+.comment-box .member-comment{
+    display:inline-block;
+}
+.comment-box .member-name{
+    margin-right:10px;
+    width:80px;
+    float:left;
+    position: relative;
+    top: 2px;
+    color:#333 
+}
+.comment-box .member-comment {
+    width: calc(100% - 90px);
+    float: left;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    
+}
+.comment-box .member-comment:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent #ddd transparent transparent;
+}
+
+.comment-box .comment-actions {
+    float: right;
+}
+
+/* End Comments */
+
+/* Start Items Section */
+
+.form-group .input-group .form-control {
+    width:96% !important;
+}
+
+.items img {
+    width: 100px;
+}
+
+/* End Items Section */
+
+
+
+/* End Dashboar Section */
+
+
+/* Start Edit Member Section */
+
+h1 {
+    margin-top:20px;
+    color: #555;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.form-horizontal .form-control {
+    width: 80%;
+}
+
+.form-horizontal .form-group {
+    margin: auto;   
+    width: 50%;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.form-horizontal .control-label {
+    padding-left:0
+}
+
+.form-horizontal .form-group input[type="submit"] {
+    width:200px;
+    margin:auto ;
+
+}
+
+.form-horizontal .form-group .show-pass {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor:pointer;
+}
+.main-table td {
+    background-color:#fff;
+}
+
+.main-table tr:first-child td {
+    background-color:#333;
+    color:#fff;
+}
+
+/* End Edit Member Section */

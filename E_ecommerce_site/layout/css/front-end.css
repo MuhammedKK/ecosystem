@@ -1,0 +1,388 @@
+/* START MAIN RULES */
+:root {
+    --main-color:#337ab7;
+}
+
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-size:15px;
+}
+
+.form-group {
+    position:relative;
+}
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+a,a:hover, a:active {color:#fff;text-decoration: none;}
+
+.fa-plus {
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+h1 {
+    margin-top:20px;
+    color: #555;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/* End MAIN RULES */
+
+/* Start Upper Navbar Section */
+
+.upper {
+    padding: 10px 0;
+    background-color:#eee;
+}
+.upper a {
+    color: #2980b9;
+}
+
+.upper h3 {
+    margin:0;
+    margin-right:20px;
+}
+
+.upper .dropdown, .dropup {
+    margin-top: -2px;
+    margin-bottom: 10px;
+}
+
+.upper .btn-default {
+    background-color:var(--main-color);
+    border:1px solid var(--main-color);
+    color:#fff;
+}
+
+/* End Upper Navbar Section */
+
+/* Start Navbar Section */
+.navbar {
+    border-radius:0;
+}
+.navbar-brand {
+    font-size:1em
+}
+
+.dropdown-menu {
+    min-width: 170px;
+    padding: 0px ;
+    border:none;
+    transition: all .5s ease-in-out;
+}
+.dropdown-menu>li>a {
+    padding: 10px;
+    transition: all .5s ease-in-out;
+
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover,
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color:var(--main-color);
+    color:#fff;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    padding-left:20px;
+}
+/* End Navbar Section */
+
+
+
+/* Start Categories */
+
+.cats {
+    margin-top:40px;
+}
+
+.cats  .panel .panel-heading {
+    font-size: 25px;
+    padding:20px 12px;
+}
+
+.cats  .panel .panel-heading h3 {
+    margin:0;
+    display: inline-block;
+    color: var(--main-color);
+    
+}
+
+.cats  .panel .panel-heading .order a {
+    color:#999
+}
+.cats  .panel .panel-heading a.active {
+    color:var(--main-color);
+} 
+
+.cats  .panel .panel-body h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color:#34495e;
+}
+
+.cats .panel hr {
+    border-top:1px solid #999
+}
+
+.cats .categories {
+ position: relative;
+ overflow:hidden ;
+}
+
+.cats .categories .cats-btns {
+    position:absolute;
+
+    right:-14%;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out
+}
+
+.cats .categories .cats-btns a {
+    margin-right:5px;
+}
+
+.cats  .panel .categories:hover .cats-btns {
+    right:0%;
+}
+
+
+.categories h1 {
+    font-size:60px;
+}
+.categories ul li a {
+    color:#333;
+}
+
+
+.item {
+    position:relative;
+}
+a.btn-primary {
+    color:#fff !important
+}
+
+.item > span {
+    position: absolute;
+    background-color: var(--main-color);
+    width: 55px;
+    height: 55px;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    top: -13px;
+    left: -12px;
+}
+.item .item-name {
+    color: var(--main-color);
+    display: block;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.item .unapproval {
+    background-color: var(--main-color);
+    padding: 5px;
+    font-size: 18px;
+    position: absolute;
+    right: -34px;
+    transform: rotate(270deg);
+    top: 33px;
+    color:#fff;
+}
+
+/* End Categories */
+
+/* Start Login Front Section */
+
+.login-front h1 span {cursor:pointer}
+
+.login-front h1 .active[data-class="login"] {
+    color:#337ab7
+}
+.login-front h1 .active[data-class="signup"] {color:#5cb85c}
+
+.login-front form {
+    width:50%;
+    margin:auto;
+}
+
+.login-front form input {
+    margin-bottom:10px;
+}
+
+.login-front form.signup {display:none}
+
+
+.login-front form.signup .alert-danger{
+    margin-bottom:10px;
+}
+
+
+
+/* End Login Front Section */
+
+/* Start Profile Section */
+
+.user-info .info .panel-body ul li{
+    padding: 13px;
+    color:#fff;
+}
+.user-info .info .panel-body ul li{
+    background-color:#999;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+.user-info .info .panel-body ul li i {
+    margin-right: 4px;
+}
+
+.user-info .info .panel-body ul li a {
+    color:#fff;
+    margin-left:10px;
+}
+/* End Profile Section */
+
+/* Start New Ad Page */
+.new-ad .panel .panel-body form .form-group .form-control {
+    width:83.33333333%;
+}
+.new-ad .panel .panel-body form .form-group input[type="submit"] {
+    width: 150px;
+    padding: 7px 5px;
+    font-size: 15px;
+    margin: 10px 25px -10px;
+}
+/* End New Ad Page */
+
+/* Start AD Show Page */
+.item-show h1 {
+    margin-bottom:50px;
+}
+.item-show a {
+    color:#337ab7;
+}
+
+.item-show .list-group .list-group-item span {
+    width: 160px;
+    display: inline-block;
+}
+.item-show .list-group .list-group-item:hover {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.item-show .list-group .list-group-item a {
+    color: #333;
+    font-size: 18px;
+
+}
+
+.item-show .list-group .list-group-item.tags .tag {
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.item-show .list-group .tags:hover .tag {
+    background-color:#fff;
+    color:var(--main-color);
+}
+
+.item-show hr {border-top: 1px solid #c7c1c1;}
+
+.item-show .adding-comment {
+    margin:0 20px;
+}
+.item-show .adding-comment h4 {
+    margin-bottom:15px;
+}
+
+.item-show .adding-comment .ad-comment {
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+    border-radius:5px;
+}
+
+.comment-box {
+    margin:50px 10px;
+}
+
+.comment-box .member-name,
+.comment-box .member-comment{
+    display:inline-block;
+}
+.comment-box .member-name{
+    margin-right:10px;
+    width:80px;
+    float:left;
+    position: relative;
+    top: 2px;
+    color:#333 
+}
+.comment-box .member-comment {
+    width: calc(100% - 90px);
+    float: left;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    
+}
+.comment-box .member-comment:before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: -25px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent #ddd transparent transparent;
+}
+
+.comment-box .comment-actions {
+    float: right;
+}
+.comment-box .comment-actions a {
+    color: #fff;    
+}
+
+.item-img img {
+    width:200px;
+}
+.item-img h5{ 
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* End AD Show Page */
+
+/* items */
+ img {
+    width:200px;
+    height: 200px !important;
+    max-height: 200px;
+    
+}
+
+/* items */
+
+
+
+
